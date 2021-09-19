@@ -11,26 +11,14 @@ class Sttr < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/abhimanyu003/sttr/releases/download/v0.1.0/sttr_0.1.0_macOS-64bit.tar.gz"
-      sha256 "a296245707ccc365954b3068ae05313472a8586b91205421491be846826f8001"
-    end
-    if Hardware::CPU.arm?
-      url "https://github.com/abhimanyu003/sttr/releases/download/v0.1.0/sttr_0.1.0_macOS-ARM64.tar.gz"
-      sha256 "b4926ba9072a0595990f03f9dea769fe4b8f036df856eb872f24a60d027486bc"
+      sha256 "96798eba60072282dde1ff614d8f6581f2136e0683403a30717a543de7b0e139"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/abhimanyu003/sttr/releases/download/v0.1.0/sttr_0.1.0_Linux-64bit.tar.gz"
-      sha256 "5a854a5df7aec29abc88fa7ed65bb53e9554609b7525888c1772310f981d0019"
-    end
-    if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/abhimanyu003/sttr/releases/download/v0.1.0/sttr_0.1.0_Linux-ARM.tar.gz"
-      sha256 "ad5561ced29e7ef21317f65d379d22695914e8f9dad0710fcf6f61478a4c56b9"
-    end
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/abhimanyu003/sttr/releases/download/v0.1.0/sttr_0.1.0_Linux-ARM64.tar.gz"
-      sha256 "03484ad01b63592966eb8ffd90df4c5537e1c85a159cf45648d0dbe3b2605fbb"
+      sha256 "2f0927a6783b9d191695db9ca519df0d3c70c5804c951ad689219f505995abfd"
     end
   end
 
