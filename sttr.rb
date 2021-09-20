@@ -10,15 +10,15 @@ class Sttr < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/abhimanyu003/sttr/releases/download/v0.1.0/sttr_0.1.0_macOS-64bit.tar.gz"
-      sha256 "852b384bd339562b15408ec93a97400a71a0a56259f7cefe9c250997ac915613"
+      url "https://github.com/abhimanyu003/sttr/releases/download/v0.1.0/sttr_0.1.0_darwin_amd64.tar.gz"
+      sha256 "06a506dc059a46c3079976e7e0f5f736aa9ac7efb4083b7287c8c79752eae49c"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/abhimanyu003/sttr/releases/download/v0.1.0/sttr_0.1.0_linux-64bit.tar.gz"
-      sha256 "e9d014cf9ee1b074ce8e50770c93de36caa6ee2b82b300a384e8870a18a69959"
+      url "https://github.com/abhimanyu003/sttr/releases/download/v0.1.0/sttr_0.1.0_linux_amd64.tar.gz"
+      sha256 "8ef2505f30b589072707c5bd4606355b9e62a3bd5c7aaf3e106bf9aca410927f"
     end
   end
 
