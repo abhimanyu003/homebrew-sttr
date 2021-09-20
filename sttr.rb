@@ -5,20 +5,20 @@
 class Sttr < Formula
   desc ""
   homepage ""
-  version "0.1.1"
+  version "0.1.2"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/abhimanyu003/sttr/releases/download/v0.1.1/sttr_0.1.1_darwin_amd64.tar.gz"
-      sha256 "4f83c1210c69287af95b1000cea5e34bc623b17ffa6487ef20025a642f8c6afd"
+      url "https://github.com/abhimanyu003/sttr/releases/download/v0.1.2/sttr_0.1.2_darwin_amd64.tar.gz"
+      sha256 "b1220dd300a5b8d3eb411c9615ef06e59292b225452b96e7f28b34d6a453f58d"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/abhimanyu003/sttr/releases/download/v0.1.1/sttr_0.1.1_linux_amd64.tar.gz"
-      sha256 "50b12167514890c2ea64cc5b0e89686b0b9c8fa2c4be01001a10dbdb179d39b2"
+      url "https://github.com/abhimanyu003/sttr/releases/download/v0.1.2/sttr_0.1.2_linux_amd64.tar.gz"
+      sha256 "903d846952969360606ea97e93881076d7840f314df0740fe9f67fab456681ac"
     end
   end
 
