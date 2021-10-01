@@ -5,29 +5,26 @@
 class Sttr < Formula
   desc "A cross-platform, cli app to perform various string operations."
   homepage "https://github.com/abhimanyu003/sttr"
-  version "0.2.0"
+  version "0.2.1"
   license "MIT"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/abhimanyu003/sttr/releases/download/v0.2.0/sttr_0.2.0_darwin_amd64.tar.gz"
-      sha256 "d995c0b9a128e55130cfad3e31589e1d6e7f7cc66451be75d38593110d751055"
+      url "https://github.com/abhimanyu003/sttr/releases/download/v0.2.1/sttr_0.2.1_darwin_amd64.tar.gz"
+      sha256 "f0f04873e00e094ad6682c4c3b8cac4904aa7f1dc8b1969f4bc50c8606752ec1"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/abhimanyu003/sttr/releases/download/v0.2.0/sttr_0.2.0_linux_amd64.tar.gz"
-      sha256 "15d29634ea54d64315a0ba8f0cfe15ed796ed649ede62d64eba82c633a30ba9f"
+      url "https://github.com/abhimanyu003/sttr/releases/download/v0.2.1/sttr_0.2.1_linux_amd64.tar.gz"
+      sha256 "cfc338a2b1f208275f65d6d4402fb0466d8ff66cd0dc43b86cbb426c139af612"
     end
   end
 
   def install
     bin.install "sttr"
-    bash_completion.install "completions/sttr.bash" => "sttr"
-    zsh_completion.install "completions/sttr.zsh" => "_sttr"
-    fish_completion.install "completions/sttr.fish"
   end
 
   test do
