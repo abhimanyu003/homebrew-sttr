@@ -5,21 +5,21 @@
 class Sttr < Formula
   desc "A cross-platform, cli app to perform various string operations."
   homepage "https://github.com/abhimanyu003/sttr"
-  version "0.2.2"
+  version "0.2.3"
   license "MIT"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/abhimanyu003/sttr/releases/download/v0.2.2/sttr_0.2.2_darwin_amd64.tar.gz"
-      sha256 "a8438f7fa663cbf49c18dc25e19d48a80526c1135b29bb22faf277da64a04ae5"
+      url "https://github.com/abhimanyu003/sttr/releases/download/v0.2.3/sttr_0.2.3_darwin_amd64.tar.gz"
+      sha256 "c6d6cb6a02ecd81d8c2ae54f03ad9673f92fa37be03e9d85d89a59459263e963"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/abhimanyu003/sttr/releases/download/v0.2.2/sttr_0.2.2_linux_amd64.tar.gz"
-      sha256 "05e85c751cce4d9f19d495cd166eefab93ccc6b498aab928b1acbee4c755bec8"
+      url "https://github.com/abhimanyu003/sttr/releases/download/v0.2.3/sttr_0.2.3_linux_amd64.tar.gz"
+      sha256 "99b0184f263c9b229592ac38a5d8da2b0eadc88ee980888d8a46ce84ac6e9158"
     end
   end
 
