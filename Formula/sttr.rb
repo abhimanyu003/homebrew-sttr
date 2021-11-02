@@ -5,26 +5,29 @@
 class Sttr < Formula
   desc "A cross-platform, cli app to perform various string operations."
   homepage "https://github.com/abhimanyu003/sttr"
-  version "0.2.4"
+  version "0.2.5"
   license "MIT"
-  bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/abhimanyu003/sttr/releases/download/v0.2.4/sttr_0.2.4_darwin_amd64.tar.gz"
-      sha256 "f8e8a22f6e7eccd931370820396a32ac7f498fe8b70690a79cf7b1813b819731"
+      url "https://github.com/abhimanyu003/sttr/releases/download/v0.2.5/sttr_0.2.5_darwin_amd64.tar.gz"
+      sha256 "5ad75e12cd8bf90a7ece5c7ad691bc5c2abb457894335a424abc900fc80d3c4c"
+
+      def install
+        bin.install "sttr"
+      end
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/abhimanyu003/sttr/releases/download/v0.2.4/sttr_0.2.4_linux_amd64.tar.gz"
-      sha256 "d83ce4efef0770caf1e026e850ca1acfe981fcbdfe3619d0bf639c16edcc49ac"
-    end
-  end
+      url "https://github.com/abhimanyu003/sttr/releases/download/v0.2.5/sttr_0.2.5_linux_amd64.tar.gz"
+      sha256 "52bf3573424e6e29e4e56794cc3bdaaf9fcf14999f175f14ff2b515ff5df2442"
 
-  def install
-    bin.install "sttr"
+      def install
+        bin.install "sttr"
+      end
+    end
   end
 
   test do
