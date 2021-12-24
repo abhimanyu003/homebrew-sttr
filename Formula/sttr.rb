@@ -5,24 +5,30 @@
 class Sttr < Formula
   desc "A cross-platform, cli app to perform various string operations."
   homepage "https://github.com/abhimanyu003/sttr"
-  version "0.2.11"
+  version "0.2.12"
   license "MIT"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/abhimanyu003/sttr/releases/download/v0.2.11/sttr_0.2.11_darwin_amd64.tar.gz"
-      sha256 "37f720259894838ccbebf2d2491305f05be47daf3f2a509b2f0b5b06a3f1811f"
+    url "https://github.com/abhimanyu003/sttr/releases/download/v0.2.12/sttr_0.2.12_darwin_all.tar.gz"
+    sha256 "b06bdfaf47aa2a71615f0a5333d2847ebb3197dd1c74899645106faa3cbaf699"
+
+    def install
+      bin.install "sttr"
+    end
+  end
+
+  on_linux do
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/abhimanyu003/sttr/releases/download/v0.2.12/sttr_0.2.12_linux_arm64.tar.gz"
+      sha256 "55ad6cc0a79bc62703119697043863e60b940e09e5ed218aa44c29f4a9717122"
 
       def install
         bin.install "sttr"
       end
     end
-  end
-
-  on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/abhimanyu003/sttr/releases/download/v0.2.11/sttr_0.2.11_linux_amd64.tar.gz"
-      sha256 "196be33be9f85d571a349a48ad1d87a5c0216a4381a5847b023acd679e507c93"
+      url "https://github.com/abhimanyu003/sttr/releases/download/v0.2.12/sttr_0.2.12_linux_amd64.tar.gz"
+      sha256 "bf8106a4f7537a8b35994035f0f7c83142ae3d82642e75cbf23634bda934742d"
 
       def install
         bin.install "sttr"
