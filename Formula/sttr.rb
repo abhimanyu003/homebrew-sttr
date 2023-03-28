@@ -10,7 +10,7 @@ class Sttr < Formula
 
   on_macos do
     url "https://github.com/abhimanyu003/sttr/releases/download/v0.2.17/sttr_0.2.17_darwin_all.tar.gz"
-    sha256 "68d25db4163f90c7d8b94af0d7c7c94b6004246ff29bd443b6e759bdbf6cb405"
+    sha256 "ba75749ba8e7370bae266045b7f7ecf11c2853cb1c0c559407a207d478548dcd"
 
     def install
       bin.install "sttr"
@@ -20,7 +20,7 @@ class Sttr < Formula
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/abhimanyu003/sttr/releases/download/v0.2.17/sttr_0.2.17_linux_amd64.tar.gz"
-      sha256 "ed70b6911fb466dd1c2ecd195aec125500eb8b608599f6bdb2d76b22c6a62fd7"
+      sha256 "87a6d27079a21778a635dca4fde70b52dd79f1552d739e74b2b7eeaf5a96e3c2"
 
       def install
         bin.install "sttr"
@@ -28,7 +28,7 @@ class Sttr < Formula
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/abhimanyu003/sttr/releases/download/v0.2.17/sttr_0.2.17_linux_arm64.tar.gz"
-      sha256 "a7df9e54246e5191aefa7a5c7ddfead753d1e96ad1ecbed636641b72818ca9eb"
+      sha256 "419236a87a108dcbc3b27b8bb802347643b1d2afe0e8a3c4f059d8d7942c1cfd"
 
       def install
         bin.install "sttr"
